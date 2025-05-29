@@ -18,7 +18,7 @@
         "backgroundColor": "transparent"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.devilchild.mobile",
+      "package": "com.sc734.mobile",
       "minSdkVersion": 21,
       "compileSdkVersion": 33
     },
