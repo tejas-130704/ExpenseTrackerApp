@@ -1,9 +1,8 @@
 {
   "expo": {
     "name": "mobile",
-    "slug": "mobile",
+    "slug": "expense-tracker",
     "version": "1.0.0",
-    
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "mobile",
@@ -45,8 +44,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "4e8ab52e-a172-4b85-994d-1730246b4b3d"
+        "projectId": "05307b55-c6f8-460b-bec4-ff63e48e8c9f"
       }
-    }
+    },
+    "owner": "sc734"
   }
 }
