@@ -1,0 +1,15 @@
+# Ignore all parent and unrelated system folders
+AppData/
+../
+*.mp4
+*.mov
+
+# OS / Editor junk files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore logs and local metadata
+npm-debug.log
+yarn-error.log
+.expo/
+.expo-shared/
