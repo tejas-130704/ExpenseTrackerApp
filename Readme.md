@@ -26,6 +26,15 @@ Inspired by the aesthetics of *Naruto*, this app turns daily expense management 
 </div>
 
 
+
+<div align="center">
+  <img src="./assets/screenshots/delete.jpg" alt="Sign Up" width="200"/>
+  <img src="./assets/screenshots/loader.jpg" alt="Login" width="200"/>
+  <img src="./assets/screenshots/new_transaction2.jpg" alt="Transaction" width="200"/>
+  <img src="./assets/screenshots/signout.jpg" alt="signout" width="200"/>
+</div>
+
+
 ---
 
 ## 🔧 Features
