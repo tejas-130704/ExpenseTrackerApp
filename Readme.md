@@ -21,7 +21,7 @@ Inspired by the aesthetics of *Naruto*, this app turns daily expense management 
 <div align="center">
   <img src="./assets/screenshots/signup.jpg" alt="Sign Up" width="200"/>
   <img src="./assets/screenshots/login.jpg" alt="Login" width="200"/>
-  <img src="./assets/screenshots/new_transaction.jpg" alt="Transaction" width="200"/>
+  <img src="./assets/screenshots/transaction_create2.jpg" alt="Transaction" width="200"/>
   <img src="./assets/screenshots/dashboard.jpg" alt="Dashboard" width="200"/>
 </div>
 
@@ -30,7 +30,7 @@ Inspired by the aesthetics of *Naruto*, this app turns daily expense management 
 <div align="center">
   <img src="./assets/screenshots/delete.jpg" alt="Sign Up" width="200"/>
   <img src="./assets/screenshots/loader.jpg" alt="Login" width="200"/>
-  <img src="./assets/screenshots/new_transaction2.jpg" alt="Transaction" width="200"/>
+  <img src="./assets/screenshots/transaction_create2.jpg" alt="Transaction" width="200"/>
   <img src="./assets/screenshots/signout.jpg" alt="signout" width="200"/>
 </div>
 
