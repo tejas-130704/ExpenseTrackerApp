@@ -5,7 +5,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import { styles } from '@/assets/styles/create.styles';
 import { useRouter } from 'expo-router';
 import { useTransaction } from '@/hooks/useTransaction'; // Adjust path
-import { SignedIn, SignedOut, useUser } from '@clerk/clerk-expo';
+import { getFirebaseAuth } from '@/firebaseConfig'; // Adjust path
 
 const categories = [
   { icon: 'silverware-fork-knife', label: 'Food & Drinks' },
@@ -24,8 +24,10 @@ export default function NewTransaction() {
   const [amount, setAmount] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [error, setError] = useState('');
-  const { user } = useUser();
-  const userId = user?.id;
+  const auth = getFirebaseAuth();
+  const user = auth.currentUser;
+  const email = user?.email;
+  const userId = email ? email.split('@')[0] : null;
 
   const { saveTransaction, loadData } = useTransaction(userId); // ✅ get the function
 

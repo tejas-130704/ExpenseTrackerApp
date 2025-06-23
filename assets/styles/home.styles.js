@@ -72,57 +72,72 @@ export const styles = {
   transactionContainer: {
     gap: 10,
   },
-  transactionList: {
-    backgroundColor: '#fffef6',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: 15,
-    borderRadius: 10,
-    shadowColor: '#000',
-    shadowOpacity: 0.05,
-    shadowRadius: 3,
-    elevation: 2,
-    marginBottom: 10,
-    justifyContent: 'space-between',
-  },
-  transactionLabel: {
-    fontSize: 16,
-    fontWeight: '500',
-  },
-  transactionCategory: {
-    fontSize: 12,
-    color: '#999',
-  },
-  transactionDate: {
-    fontSize: 12,
-    color: '#999',
-    textAlign: 'right',
-  },
-  positive: {
-    color: '#43a047',
-    fontWeight: '600',
-    textAlign: 'right',
-  },
-  negative: {
-    color: '#e53935',
-    fontWeight: '600',
-    textAlign: 'right',
-  },
-  transactionDetails:{
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    // gap: 20,
-  },
-  transactionAmount:{
-    borderColor: '#ccc',
-    borderRightWidth: 1,
-    paddingRight: 20,
-  },
-    dustbin: {
-        marginLeft: 13,
-        marginRight: 3,
-        color: 'rgba(255,0,0,0.7)',
+transactionList: {
+  backgroundColor: '#fffef6',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: 15,
+  borderRadius: 10,
+  shadowColor: '#000',
+  shadowOpacity: 0.05,
+  shadowRadius: 3,
+  elevation: 2,
+  marginBottom: 10,
+  gap: 10,
+},
 
-    },
+transactionTextGroup: {
+  flex: 1,
+  marginRight: 10,
+},
+
+transactionLabel: {
+  fontSize: 16,
+  fontWeight: '500',
+  color: '#000',
+  flexShrink: 1,
+  flexWrap: 'wrap',
+},
+
+transactionCategory: {
+  fontSize: 12,
+  color: '#999',
+},
+
+transactionDetails: {
+  flexDirection: 'row',
+  alignItems: 'center',
+},
+
+transactionAmount: {
+  alignItems: 'flex-end',
+  paddingRight: 10,
+  borderRightWidth: 1,
+  borderColor: '#ccc',
+  marginRight: 10,
+},
+
+positive: {
+  color: '#43a047',
+  fontWeight: '600',
+  textAlign: 'right',
+},
+
+negative: {
+  color: '#e53935',
+  fontWeight: '600',
+  textAlign: 'right',
+},
+
+transactionDate: {
+  fontSize: 12,
+  color: '#999',
+  textAlign: 'right',
+},
+
+dustbin: {
+  color: 'rgba(255,0,0,0.7)',
+},
+
 }

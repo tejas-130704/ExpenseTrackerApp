@@ -1,15 +1,14 @@
-import { useClerk } from '@clerk/clerk-expo'
-import { Text, View, TouchableOpacity } from 'react-native'
-import Icon from '@react-native-vector-icons/fontawesome';
-import { Alert } from 'react-native';
+import React from 'react';
+import { Alert, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { signOut } from 'firebase/auth';
+import { getFirebaseAuth } from '@/firebaseConfig'; // Adjust path if needed
 
 export const SignOutButton = () => {
-
-  const { signOut } = useClerk()
+  const auth = getFirebaseAuth();
 
   const handleSignOut = () => {
     Alert.alert(
-
       "Sign Out",
       "Are you sure you want to sign out?",
       [
@@ -21,8 +20,9 @@ export const SignOutButton = () => {
           text: "Sign Out",
           onPress: async () => {
             try {
-              await signOut();
-              
+              await signOut(auth);
+              console.log("User signed out");
+              // Optional: redirect to sign-in manually if needed
             } catch (err) {
               console.error("Error signing out:", err);
             }
@@ -30,14 +30,16 @@ export const SignOutButton = () => {
         }
       ]
     );
-  }
+  };
 
   return (
     <TouchableOpacity onPress={handleSignOut}>
-      {/* <Text>Sign out</Text> */}
-
-      <Icon name="sign-out" size={23} style={{ fontWeight: 'light' }} color="rgba(0,0,0,0.8)" />
-
+      <Icon
+        name="sign-out"
+        size={23}
+        style={{ fontWeight: 'light' }}
+        color="rgba(0,0,0,0.8)"
+      />
     </TouchableOpacity>
-  )
-}
+  );
+};

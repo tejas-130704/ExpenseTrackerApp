@@ -13,13 +13,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/scroll.png",
-        "backgroundColor": "transparent"
+        "foregroundImage": "./assets/images/scrollface.png",
+        "backgroundColor": "#000000"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.sc734.mobile",
-      "minSdkVersion": 21,
-      "compileSdkVersion": 33
+      "package": "com.tej1307.mobile"
     },
     "web": {
       "bundler": "metro",
@@ -36,7 +34,8 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
@@ -44,9 +43,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "05307b55-c6f8-460b-bec4-ff63e48e8c9f"
+        "projectId": "dda3bd04-1d34-47f3-847f-a4e3a9f6f242"
       }
     },
-    "owner": "sc734"
+    "owner": "tej1307"
   }
 }

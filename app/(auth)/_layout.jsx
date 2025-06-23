@@ -1,12 +1,25 @@
-import { Redirect, Stack } from 'expo-router'
-import { useAuth } from '@clerk/clerk-expo'
+import { Redirect } from 'expo-router';
+import { Stack } from 'expo-router/stack';
+import React, { useEffect, useState } from 'react';
+import { getFirebaseAuth } from '@/firebaseConfig';
+import { onAuthStateChanged } from 'firebase/auth';
 
-export default function AuthRoutesLayout() {
-  const { isSignedIn } = useAuth()
+export default function AuthLayout() {
+  const auth = getFirebaseAuth();
+  const [isSignedIn, setIsSignedIn] = useState(null);
 
-  if (isSignedIn) {
-    return <Redirect href={'/'} />
-  }
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log('Auth state changed:', user?.email);
+      setIsSignedIn(!!user);
+    });
 
-  return <Stack  screenOptions={{ headerShown: false}} />
+    return () => unsubscribe();
+  }, []);
+
+  if (isSignedIn === null) return null; // Or loading screen
+
+  if (isSignedIn) return <Redirect href="/" />;
+
+  return <Stack screenOptions={{ headerShown: false }} />;
 }
