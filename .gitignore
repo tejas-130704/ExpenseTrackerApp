@@ -48,3 +48,59 @@ AppData/
 IMG-20250529-WA0003.jpg
 # Do NOT ignore all .jpg or .png globally
 # Keep images inside your asset folder (like /assets or /images)
+
+
+####################
+# BACKEND (Express) #
+####################
+
+# Dependencies (already covered globally)
+# node_modules/
+
+# Build output
+build/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+
+# Environment variables
+.env.development
+.env.production
+.env.test
+.env.local
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database files (if used locally)
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Render deployment files (keep YAML if needed, else ignore below)
+render.yaml
+
+# Editor-specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Optional: ignore uploads if storing files locally
+uploads/
+public/uploads/
