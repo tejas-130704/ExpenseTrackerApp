@@ -39,7 +39,8 @@ yarn-error.*
 app-example
 
 .env
-firebaseConfig.js
+# sensitive config
+mobile/firebaseConfig.js
 
 # Ignore unwanted external folders
 AppData/

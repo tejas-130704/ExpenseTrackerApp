@@ -18,23 +18,13 @@ Inspired by the aesthetics of *Naruto*, this app turns daily expense management 
 
 ## 📱 Screenshots
 
-### 🔐 Sign Up Screen - Jiraiya Theme
+<div align="center">
+  <img src="./assets/screenshots/signup.jpg" alt="Sign Up" width="200"/>
+  <img src="./assets/screenshots/login.jpg" alt="Login" width="200"/>
+  <img src="./assets/screenshots/new_transaction.jpg" alt="Transaction" width="200"/>
+  <img src="./assets/screenshots/dashboard.jpg" alt="Dashboard" width="200"/>
+</div>
 
-![Sign Up](./assets/screenshots/signup.jpg)
-
-### 🔑 Login Screen - Madara Theme
-
-![Login](./assets/screenshots/login.jpg)
-
-### 🧾 New Transaction Screen
-
-![Transaction](./assets/screenshots/new_transaction.jpg)
-
-### 📊 Dashboard / Transaction List
-
-![Dashboard](./assets/screenshots/dashboard.jpg)
-
-> You can find these images in the `/assets/screenshots/` folder or upload them to your GitHub repo.
 
 ---
 
